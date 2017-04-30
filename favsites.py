@@ -21,8 +21,8 @@ urls = []
 if len(argumentos) == 3:
     argumentos[1] = "--sites"
     lista = argumentos[2]
-    if "." not in lista:
-        print("Arquivo " + lista + ' Sem extensao')
+    if ".txt" not in lista:
+        print("Extensao .txt obrigatoria")
         exit()
     try:
         abrir = open(lista, 'r')
